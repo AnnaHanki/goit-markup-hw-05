@@ -28,8 +28,6 @@ a {
   text-decoration: none;
 }
 
-
-
 img {
   display: block;
 }
@@ -652,7 +650,7 @@ address {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-subtitle {
+.modal-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -682,7 +680,6 @@ address {
 
 .form-label {
   display: block;
-  column-gap: 8px;
 }
 
 .form-label,
@@ -693,7 +690,13 @@ address {
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: #8e8f99;
+
 }
+
+/* .form-comment::placeholder {
+  color: #8e8f99;
+
+} */
 
 .form-label:focus-within {
   color: #4d5ae5;
@@ -704,7 +707,9 @@ address {
   border-radius: 4px;
   width: 100%;
   height: 40px;
+  margin-bottom: 8px;
   outline: transparent;
+  color: #2e2f42;
 }
 
 .form-comment {
@@ -719,6 +724,7 @@ address {
   width: 100%;
   height: 120px;
   outline: transparent;
+  color: #2e2f42;
 }
 
 .form-input:focus-within,
@@ -740,38 +746,45 @@ address {
   width: 16px;
   height: 16px;
   border-radius: 2px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  /* border: 1px solid rgba(46, 47, 66, 0.4); it created a vertical line*/
+  margin-right: 8px;
 }
 
 .checkspan:active {
   border-radius: 2px;
-background-color: #404bbf;
-border: 1px solid #404bbf;
-fill: #f4f4fd;
+  background-color: #404bbf;
+  border: 1px solid #404bbf;
+  fill: #f4f4fd;
 }
-
 
 .form-accept {
   margin-top: 16px;
 }
 
- .accept-description {
-  min-height: 10em;
-    display: table-cell;
-    vertical-align: middle;
+.accept-description {
+  display: block;
 }
 
 .accept-icon {
-  min-height: 10em;
-    display: table-cell;
-    vertical-align: middle;
+  display: block;
 }
 
+.visually-hidden-icon {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /*
 .accept-checkbox {
 }
-.visually-hidden {
-}
+
 
 .check {
 }
@@ -799,10 +812,9 @@ fill: #f4f4fd;
   color: #fff;
 
   margin: 24px auto;
-  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-send-btn:hover,
