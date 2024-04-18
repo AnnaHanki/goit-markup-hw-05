@@ -578,6 +578,73 @@ address {
   fill: #f4f4fd;
 }
 
+/* subscribe */
+
+.footer-subscribe-mail {
+  width: 453px;
+  height: 80px;
+  margin-left: auto;
+}
+
+.footer-email-text {
+  font: 500 16px / 1.5 "Roboto", sans-serif;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.footer-form-mail {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-label-mail {
+}
+
+.footer-input {
+  border: 1.5px solid #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+
+.footer-input::placeholder {
+  font: 400 12px / 2 "Roboto", sans-serif;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin: 8px 16px;
+}
+.footer-btn {
+  background: #4d5ae5;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+  border-radius: 4px;
+  width: 165px;
+  height: 40px;
+  color: #fff;
+  min-width: 165px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-btn:focus,
+.footer-btn:hover {
+  background-color: #404bbf;
+}
 /* MODAL */
 
 .backdrop {
@@ -611,6 +678,7 @@ address {
   min-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
+  padding: 72px 24px 24px 24px;
 
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
