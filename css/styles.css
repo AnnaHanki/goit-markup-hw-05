@@ -842,23 +842,6 @@ address {
   margin-bottom: 16px;
 }
 
-
-/*
-.checkspan {
-  width: 16px;
-  height: 16px;
-  border-radius: 2px;
-  margin-right: 8px;
-}
-
-.checkspan:active {
-  border-radius: 2px;
-  background-color: #404bbf;
-  border: 1px solid #404bbf;
-  fill: #f4f4fd;
-}
-*/
-
 .checkspan {
   display: inline-flex;
   justify-content: center;
@@ -915,7 +898,7 @@ address {
 
 
 .form-accept {
-  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .accept-description {
