@@ -744,8 +744,7 @@ address {
 
 
 .form-label,
-.form-accept,
-.form-comment {
+.form-accept {
   display: block;
   margin-bottom: 4px;
 
@@ -759,7 +758,24 @@ address {
   color: #4d5ae5;
 }
 
-
+.form-comment {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-comment:focus {
+  border-color: #4d5ae5;
+}
 
 .input-wrapper {
   width: 100%;
@@ -822,7 +838,7 @@ address {
   fill: #4d5ae5;
 }
 
-.content-modal-title {
+.comment-modal-title {
   margin-bottom: 16px;
 }
 
@@ -847,6 +863,8 @@ address {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  fill: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
 .accept-checkbox:checked + .accept-description span {
@@ -893,7 +911,7 @@ address {
 
 
 .form-accept {
-  margin-top: 16px;
+  margin-top: 24px;
 }
 
 .accept-description {
@@ -944,6 +962,7 @@ address {
 .form-send-btn {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
@@ -963,8 +982,7 @@ address {
 
   margin: 24px auto;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-send-btn:hover,
