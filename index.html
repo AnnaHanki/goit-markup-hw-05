@@ -641,6 +641,7 @@
         <p class="modal-title-form">
           Leave your contacts and we will call you back
         </p>
+
         <form name="contacts-leaving" autocomplete="off">
           <!-- Елементи форми -->
           <div class="form-group">
@@ -656,7 +657,9 @@
                 <use href="./images/icons.svg#iconsperson"></use>
               </svg>
             </div>
+          </div>
 
+          <div class="form-group">
             <label class="form-label" for="user-tel">Phone</label>
             <div class="input-wrapper">
               <input
@@ -669,7 +672,9 @@
                 <use href="./images/icons.svg#iconsphone"></use>
               </svg>
             </div>
+          </div>
 
+          <div class="form-group">
             <label class="form-label" for="user-email">Email</label>
             <div class="input-wrapper">
               <input
@@ -682,42 +687,38 @@
                 <use href="./images/icons.svg#iconsemail"></use>
               </svg>
             </div>
+          </div>
 
-            <div class="content-modal-title">
-              <label class="form-label"
-                >Comment
-                <textarea
-                  name="user-comment"
-                  id="user-comment"
-                  class="form-comment"                  
-                  placeholder="Text input"
-                ></textarea>
-              </label>
-            </div>
+          <div class="content-modal-title">
+            <label class="form-label"
+              >Comment
+              <textarea
+                name="user-comment"
+                id="user-comment"
+                class="form-comment"
+                placeholder="Text input"
+              ></textarea>
+            </label>
+          </div>
 
-            <div class="form-accept">
-              <input
-                  type="checkbox"
-                  name="user-accept"
-                  id="user-accept"
-                  value="true"
-                  class="accept-checkbox visually-hidden"
-                  checked
-                />
-              <label class="accept-description">                
-                <span class="checkspan">
-                  <svg
-                    class="accept-icon"
-                    width="10"
-                    height="8"
-                  >
-                    <use href="./images/icons.svg#iconsCheck"></use>
-                  </svg>
-                </span>
-                I accept the terms and conditions of the
-                <a class="accept-link" href="">Privacy Policy</a>
-              </label>
-            </div>
+          <div class="form-accept">
+            <input
+              type="checkbox"
+              name="user-accept"
+              id="user-accept"
+              value="true"
+              class="accept-checkbox visually-hidden"
+              checked
+            />
+            <label class="accept-description">
+              <span class="checkspan">
+                <svg class="accept-icon" width="10" height="8">
+                  <use href="./images/icons.svg#iconsCheck"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="accept-link" href="">Privacy Policy</a>
+            </label>
           </div>
 
           <button class="form-send-btn" type="submit">Send</button>
