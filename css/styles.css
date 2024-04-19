@@ -868,9 +868,13 @@ address {
 }
 
 .accept-checkbox:checked + .accept-description span {
+  background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
-  background-color: #404bbf;
+}
+
+.accept-checkbox:focus + .accept-description span {
+  border-color: #4d5ae5;
 }
 
 
