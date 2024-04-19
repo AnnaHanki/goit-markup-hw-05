@@ -530,9 +530,7 @@ address {
 
 .footer-container {
   display: flex;
-  align-items: baseline;
-  margin: 0 auto;
-  max-width: 1158px;
+  align-items: baseline;  
 }
 
 .footer-soc-media-text {
@@ -581,8 +579,8 @@ address {
 /* subscribe */
 
 .footer-subscribe-mail {
-  width: 453px;
-  height: 80px;
+  /* width: 453px;
+  height: 80px; */
   margin-left: auto;
 }
 
@@ -629,7 +627,7 @@ address {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 24px;
+  /* gap: 24px; */
   border-radius: 4px;
   width: 165px;
   height: 40px;
@@ -782,12 +780,12 @@ address {
 
 .input-wrapper {
   width: 100%;
-  height: 58px;
 
   position: relative;
 }
 
 .form-input {
+  font-size: 12px;
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -825,7 +823,7 @@ address {
   top: 50%;
   transform: translateY(-50%);
   fill: transparent;
-  stroke: #2e2f42;
+  fill: #2e2f42;
   height: 24;
   /* padding-bottom: 11px;
   padding-top: 11px;   */
